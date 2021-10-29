@@ -6,12 +6,12 @@ const Profile = (props) => {
     console.log(props)
   return (
     <div>
-    <p> {props.bio} </p>
-    <h1> {props.fullName}</h1>
+    <p style={{color: "red"}}> {props.bio} </p>
+    <h1 style={{color: "skyblue"}}> {props.fullName}</h1>
     <h2> {props.profession}</h2>
     {props.children}
     <Button className="colors" onClick={()=> props.showAlert(props.fullName)}>Click</Button>
-    <h1>{props.description}</h1>
+    <h1 style={{color:"lightgray"}}>{props.description}</h1>
     </div>
   );
 };
