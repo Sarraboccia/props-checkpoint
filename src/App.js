@@ -3,7 +3,6 @@
 import "./App.css";
 import Profile from "./Profile/Profile.js";
 import Memories from "./Memories.JPG"
-
 function App() {
 
   function showAlert (name) {
@@ -20,6 +19,7 @@ function App() {
         bio="If you get tired, learn to rest, not to quit."
         profession="Web development"
         showAlert={showAlert}
+        description="my discription"
       >
         <div>
         <img src={Memories} alt="children props" width= '250px' />
